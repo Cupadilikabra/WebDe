@@ -35,18 +35,21 @@ function randomFood(min,max){
       foodY = Math.floor(Math.random() * (max - min + 1)) + min;
     } while (foodY % 20 !== 0);
     return {foodX,foodY};
-
-//   newFood = context.fillRect(foodX, foodY, cellSize, cellSize) 
-//   context.fillStyle='red'
-
-
-
+    
   }
-const {foodY,foodX }= randomFood(0,400)
+const {foodY,foodX }= randomFood(20,400)
   
-
+context.fillRect(foodX, foodY, cellSize, cellSize)
 console.log(foodX,foodY)
 
+
+function drawNewFood(){
+  const {foodX,foodY} =randomFood(20,400)
+  
+  context.fillRect(foodX, foodY, cellSize, cellSize)
+
+
+}
 
 
 

@@ -1,0 +1,27 @@
+h2{
+    font-weight: normal;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.color-title{
+    color: blue;
+}
+#red{
+    color: red;
+}
+
+#orange{
+    color: orange;
+}
+#blue{
+    color: blue;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: yellow;
+}

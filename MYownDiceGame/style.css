@@ -1,0 +1,55 @@
+*{
+    background-color: rgb(87, 81, 81);
+}
+
+.container{
+   width: 70%;
+   margin: auto;
+   text-align: center;
+   margin-top: 150px;
+}
+
+.dice{
+    margin-top: 100px;
+    text-align: center;
+    display: inline-block;
+}
+img{
+    width: 80%;
+    transition: transform 2s ease-in-out;
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Spinning class */
+.spin {
+    animation: spin 0.8s ease-in-out;
+}
+
+h1 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+}
+
+p{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+footer{
+    text-align: center;
+    margin-top: 200px;
+}

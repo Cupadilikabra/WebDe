@@ -21,18 +21,31 @@ function drawS() {
 
 }
 
-function randomFood(){
+function randomFood(min,max){
 
-  food = Math.floor(Math.random(cellSize)*canvas.height)
+  
+  let foodX;
+    do {
+      foodX = Math.floor(Math.random() * (max - min + 1)) + min;
+    } while (foodX % 20 !== 0);
+    
 
-  newFood = context.fillRect(food, food, cellSize, cellSize) 
-  context.fillStyle='red'
+  let foodY;
+    do {
+      foodY = Math.floor(Math.random() * (max - min + 1)) + min;
+    } while (foodY % 20 !== 0);
+    return {foodX,foodY};
 
-  console.log(newFood)
-}
+//   newFood = context.fillRect(foodX, foodY, cellSize, cellSize) 
+//   context.fillStyle='red'
 
 
 
+  }
+const {foodY,foodX }= randomFood(0,400)
+  
+
+console.log(foodX,foodY)
 
 
 
